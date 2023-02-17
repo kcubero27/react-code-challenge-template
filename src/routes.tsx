@@ -1,18 +1,18 @@
-import { type FC } from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { People } from '@pages/people'
+import { type FC } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { People } from "@pages/people";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <p>Home</p>
+    path: "/",
+    element: <p>Home</p>,
   },
   {
-    path: 'people',
-    element: <People />
-  }
-])
+    path: "people",
+    element: <People />,
+  },
+]);
 
 export const Routes: FC = () => {
-  return <RouterProvider router={router} />
-}
+  return <RouterProvider router={router} />;
+};
