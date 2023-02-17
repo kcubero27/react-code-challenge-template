@@ -1,50 +1,56 @@
 {
-	"name": "react-code-challenge-template",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"author": {
-		"name": "Karen Cubero",
-		"url": "https://github.com/kcubero27"
-	},
-	"engines": {
-		"node": ">=18.14.0",
-		"npm": ">=9.0.0"
-	},
-	"engineStrict": true,
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
-		"preview": "vite preview",
-		"lint:fix": "eslint src --fix",
-		"format:check": "prettier --check src/**/*.{ts,tsx,css}",
-		"format:fix": "prettier --write src/**/*.{ts,tsx,css}",
-		"format:all:fix": "prettier --write .",
-		"prepare": "husky install"
-	},
-	"lint-staged": {
-		"src/**.{ts,tsx}": "eslint --cache --fix",
-		"*.{ts,tsx,css,md}": "prettier --write"
-	},
-	"dependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
-	},
-	"devDependencies": {
-		"@types/react": "^18.0.27",
-		"@types/react-dom": "^18.0.10",
-		"@typescript-eslint/eslint-plugin": "^5.52.0",
-		"@vitejs/plugin-react": "^3.1.0",
-		"eslint": "^8.34.0",
-		"eslint-config-standard-with-typescript": "^34.0.0",
-		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-n": "^15.6.1",
-		"eslint-plugin-promise": "^6.1.1",
-		"eslint-plugin-react": "^7.32.2",
-		"husky": "^8.0.0",
-		"lint-staged": "^13.1.2",
-		"prettier": "2.8.4",
-		"typescript": "^4.9.5",
-		"vite": "^4.1.0"
-	}
+  "name": "react-code-challenge-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Karen Cubero",
+    "url": "https://github.com/kcubero27"
+  },
+  "engines": {
+    "node": ">=18.14.0",
+    "npm": ">=9.0.0"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint:check": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "format:check": "prettier --check src/**/*.{ts,tsx,css}",
+    "format:fix": "prettier --write src/**/*.{ts,tsx,css}",
+    "format:all:fix": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**.{ts,tsx}": "eslint --cache --fix",
+    "*.{ts,tsx,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.24.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1"
+  },
+  "devDependencies": {
+    "@tanstack/react-query-devtools": "^4.24.6",
+    "@types/node": "^18.14.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "2.8.4",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.0"
+  }
 }
