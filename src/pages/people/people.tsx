@@ -12,7 +12,5 @@ export const People: FC = () => {
     return <p>Error</p>;
   }
 
-  console.log("DATA", data);
-
   return <p>data</p>;
 };

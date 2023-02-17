@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended", "standard-with-typescript", "prettier"],
+  extends: ["plugin:react/recommended", "standard-with-typescript", "plugin:jsx-a11y/recommended", "prettier"],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
@@ -15,7 +15,7 @@ module.exports = {
       version: "detect",
     },
   },
-  plugins: ["react"],
+  plugins: ["react", "jsx-a11y"],
   rules: {
     "react/react-in-jsx-scope": "off",
     "no-tabs": ["error", { allowIndentationTabs: true }],
