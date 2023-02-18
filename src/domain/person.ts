@@ -1,4 +1,4 @@
-export interface People {
+export interface Person {
   birth_year: string;
   eye_color: string;
   films: string[]; // "https://swapi.dev/api/films/1/",

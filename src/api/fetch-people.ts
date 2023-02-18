@@ -1,15 +1,15 @@
-import { type People } from "@domain/people";
-import { API_ROUTE_GET_PEOPL } from "./routes";
+import { type Person } from "@domain/person";
+import { API_ROUTES } from "./routes";
 
-interface PeopleResponse {
+export interface PeopleResponse {
   count: number;
   next: null | string; // "https://swapi.dev/api/people/?page=2"
   previous: null | string;
-  results: People[];
+  results: Person[];
 }
 
 export const fetchPeople = async (): Promise<PeopleResponse[]> => {
-  const response = await fetch(API_ROUTE_GET_PEOPL, {
+  const response = await fetch(API_ROUTES.API_ROUTE_GET_PEOPLE(), {
     method: "GET",
   });
 

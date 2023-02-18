@@ -12,5 +12,11 @@ export const People: FC = () => {
     return <p>Error</p>;
   }
 
-  return <p>data</p>;
+  return (
+    <p>
+      {data?.results.map((person) => (
+        <span key={person.name}>{person.name}</span>
+      ))}
+    </p>
+  );
 };
