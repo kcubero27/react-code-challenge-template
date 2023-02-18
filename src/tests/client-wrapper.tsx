@@ -20,10 +20,10 @@ const createTestQueryClient = (): QueryClient =>
     },
   });
 
-export function getClientWrapper(): ({ children }: { children: ReactNode }) => ReactNode {
+export function getClientWrapper(): ({ children }: { children: ReactElement }) => ReactElement {
   const testQueryClient = createTestQueryClient();
 
-  // TODO
+  // TODO: consider adding this eslint rule
   // eslint-disable-next-line react/display-name
   return ({ children }: { children: ReactNode }) => (
     <QueryClientProvider client={testQueryClient}>{children}</QueryClientProvider>
