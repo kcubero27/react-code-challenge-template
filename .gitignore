@@ -28,3 +28,8 @@ coverage
 
 # Cache
 .eslintcache
+
+# Env variables
+cypress.env.json
+
+.env

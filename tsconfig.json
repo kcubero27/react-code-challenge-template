@@ -26,6 +26,9 @@
       "@tests/*": ["src/tests/*"]
     }
   },
-  "include": ["src"],
+  "include": [
+		"src",
+		"./cypress.d.ts"
+	],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
