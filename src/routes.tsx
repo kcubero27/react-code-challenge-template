@@ -5,10 +5,6 @@ import { People } from "@pages/people";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <p>Home</p>,
-  },
-  {
-    path: "people",
     element: <People />,
   },
 ]);

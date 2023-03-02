@@ -13,10 +13,19 @@ export const People: FC = () => {
   }
 
   return (
-    <p>
-      {data?.results.map((person) => (
-        <span key={person.name}>{person.name}</span>
-      ))}
-    </p>
+    <div>
+      <button
+        type="button"
+        className="rounded bg-indigo-600 py-1 px-2 text-xs font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        Button text
+      </button>
+
+      <ul>
+        {data?.results.map((person) => (
+          <li key={person.name}>{person.name}</li>
+        ))}
+      </ul>
+    </div>
   );
 };

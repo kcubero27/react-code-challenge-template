@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { App } from "@/App";
 import { type MockedRequest, rest } from "msw";
 import { worker } from "@tests/api/browser";
+import "./index.css";
 
 if (!import.meta.env.PROD) {
   void import("@axe-core/react").then((axe) => {
